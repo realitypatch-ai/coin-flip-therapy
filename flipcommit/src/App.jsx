@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [optionA, setOptionA] = useState('');
@@ -259,6 +260,7 @@ function App() {
           <p>the coin doesn't make decisions. you do.</p>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
